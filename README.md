@@ -1,1 +1,1 @@
-"# myblog" 
+"make myblog with MERN stack"
