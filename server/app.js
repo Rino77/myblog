@@ -1,12 +1,15 @@
 import express from 'express'
 import hpp from 'hpp';
-import mongoose, { mongo } from 'mongoose'
+import mongoose from 'mongoose'
 import config from './config';
 import cors from "cors";
 import helmet from "helmet"
 
 //Routes
 import postsRoutes from './routes/api/post';
+import userRoutes from './routes/api/user';
+import authRoutes from './routes/api/auth';
+
 import morgan from 'morgan';
 
 const app = express();
@@ -32,6 +35,7 @@ mongoose
 
 //Use routes
 app.get('/');
-app.use('/api/post', postsRoutes)
-
+app.use('/api/post', postsRoutes);
+app.use('/api/user', userRoutes);
+app.use('/api/auth', authRoutes);
 export default app;

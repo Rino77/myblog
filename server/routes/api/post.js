@@ -1,7 +1,8 @@
 import express from 'express'
+import auth from '../../middleware/auth'
 
 //model
-import Post from '../../modules/post'
+import Post from '../../models/post'
 
 const router = express.Router()
 
@@ -14,7 +15,7 @@ router.get('/', async(req, res) => {
 })
 
 
-router.post('/', async(req, res, next)=>{
+router.post('/', auth, async(req, res, next)=>{
     try {
         console.log(req, 'req')
         const {title, contents, fileUrl, creator} =req.body
