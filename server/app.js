@@ -12,6 +12,7 @@ import authRoutes from './routes/api/auth';
 
 import morgan from 'morgan';
 
+
 const app = express();
 const {MONGO_URI} = config;
 
