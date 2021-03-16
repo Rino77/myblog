@@ -1,3 +1,5 @@
 REACT BLOG
 
-"make myblog with MERN stack"
+"Make myblog with MERN stack" (MERN : mongoDB + Expressjs + Reactjs + Nodejs)
+
+
