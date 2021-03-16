@@ -2,3 +2,13 @@
     background: #343a40;
     color: #FFF;
 }
+
+#page-header {
+    height: 200px;
+    background: url("../assets/img/banner.jpg");
+    background-position: 54% 95%;
+    background-attachment: fixed;
+    color: #fff;
+    border-bottom: 1px #eee solid;
+    padding-top: 60px;
+}
